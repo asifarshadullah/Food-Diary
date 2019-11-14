@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="thanks" stylesheets="@application.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThanksPageController">
+   <children>
+      <Label layoutX="171.0" layoutY="137.0" prefHeight="60.0" prefWidth="372.0" text="Transaction completed." textFill="#724c36">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="197.0" prefHeight="39.0" prefWidth="410.0" text="Your order will be delivered shortly." textFill="#80513c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="174.0" layoutY="331.0" mnemonicParsing="false" onAction="#searchAgain" prefHeight="39.0" prefWidth="254.0" text="Search Again">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="460.0" layoutY="45.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="27.0" prefWidth="82.0" text="Log Out">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

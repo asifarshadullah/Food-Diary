@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenulistController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../../../Images/Picture7.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="menuTable" layoutX="21.0" layoutY="109.0" prefHeight="400.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="itemMenu" prefWidth="225.0" text="Items" />
+          <TableColumn fx:id="priceMenu" prefWidth="117.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="billTable" layoutX="380.0" layoutY="176.0" prefHeight="223.0" prefWidth="206.0">
+        <columns>
+          <TableColumn fx:id="itemBill" prefWidth="126.0" text="Items" />
+          <TableColumn fx:id="priceBill" prefWidth="78.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="133.0" layoutY="530.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="37.0" prefWidth="105.0" text="Add to cart" textFill="#5b2121">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="378.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitBill" text="Submit" textFill="#682727">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="453.0" layoutY="419.0" mnemonicParsing="false" onAction="#removeFromList" text="Remove from list" textFill="#6f3333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="74.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToPrevious" text="Go to previous page" textFill="#651515">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="rate" layoutX="104.0" layoutY="76.0" prefHeight="30.0" prefWidth="68.0" />
+      <ImageView fitHeight="58.0" fitWidth="200.0" layoutX="383.0" layoutY="118.0">
+         <image>
+            <Image url="@../../../../../Images/Order-Now-PNG-Image.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="67.0" layoutY="520.0">
+         <image>
+            <Image url="@../../../../../Images/add-to-shopping-cart-png-image-2944.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="16.0" layoutY="15.0">
+         <image>
+            <Image url="@../../../../../Images/Backward-512.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="484.0" layoutY="28.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="25.0" prefWidth="78.0" text="Log out" textFill="#6f2525">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
